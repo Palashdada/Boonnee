@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
@@ -55,9 +56,15 @@ const Register = () => {
                 I agree to privacy policy & terms{" "}
               </label>
             </div>
-            <button className="bg-blue-500 w-full hover:shadow-blue-500/50 hover:shadow-lg text-white rounded-b-md px-7 py-2 mb-3 ">
+            <button className="bg-blue-500 w-full hover:shadow-blue-500/50 hover:shadow-lg text-white rounded-b-md px-7 py-2 mb-3 overflow-hidden ">
               Sing Up
             </button>
+            <div className="flex items-center mb-3 gap-3 justify-center">
+              <p>
+                Already have an account ?{" "}
+                <Link to={"/login"}>Sign In here</Link>
+              </p>
+            </div>
           </form>
         </div>
       </div>
